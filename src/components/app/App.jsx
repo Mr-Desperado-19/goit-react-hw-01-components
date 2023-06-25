@@ -1,17 +1,17 @@
-import User from "../user";
-import Data from "../data";
-import Friends from "../friends";
-import Transactions from "../transactions";
+import Profile from "../profile";
+import Statistics from "../statistics";
+import FriendList from "../friendList";
+import TransactionHistory from "../transactionHistory";
 
 
 
 const App = () => {
   return (
     <div>
-        <User />
-        <Data />
-        <Friends />
-        <Transactions />
+        <Profile />
+        <Statistics />
+        <FriendList />
+        <TransactionHistory />
     </div>
   );
 };
