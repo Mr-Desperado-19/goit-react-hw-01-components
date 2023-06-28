@@ -4,12 +4,12 @@ import "./Statistics.scss"
 const Statistics = ({ title, stats }) => {
   return (
     <section className="statistics">
-      {title && <h2 className="title">{title}</h2>}
+      {title && <h2 className="statistics-title">{title}</h2>}
       <ul className="stat-list">
         {stats.map(({ id, label, percentage }) => (
-          <li key={id} className="item">
-            <span className="label">{label}</span>
-            <span className="percentage">{percentage}%</span>
+          <li key={id} className="stat-list_item">
+            <span className="stat-list_label">{label}</span>
+            <span className="stat-list_percentage">{percentage}%</span>
           </li>
         ))}
       </ul>
