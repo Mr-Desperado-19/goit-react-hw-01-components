@@ -3,12 +3,12 @@ import "./FriendList.scss"
 
 const FriendList = ({ friends }) => {
   return (
-    <ul>
+    <ul className="friend-list">
       {friends.map(({ avatar, name, isOnline, id }) => (
-        <li key={id} className="item">
+        <li key={id} className="friend-list_item">
           <span className={`status ${isOnline ? "online" : "offline"}`}></span>
-          <img className="avatar" src={avatar} alt="User avatar" width="48" />
-          <p className="name">{name}</p>
+          <img className="friend-list_avatar" src={avatar} alt="User avatar" width="48" height="48" />
+          <p className="friend-list_name">{name}</p>
         </li>
       ))}
     </ul>
