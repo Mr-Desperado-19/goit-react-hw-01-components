@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "./FriendList.scss"
 
 const FriendList = ({ friends }) => {
   return (
