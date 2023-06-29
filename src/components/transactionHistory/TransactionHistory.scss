@@ -1,0 +1,45 @@
+table {
+    border-collapse: collapse;
+    box-shadow: 0px 2px 6px darkgray;
+}
+
+table th,
+table td {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px 100px;
+  border: 1px solid lightgray;
+}
+
+table th {
+    font-family: 'Segoe UI';
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    color: #fff;
+    border-color: #fff;
+    background-color: #00bcd5;
+}
+
+table td {
+    font-family: 'Segoe UI';
+    font-size: 16px;
+
+    color: #a1a2a4;
+
+    &:first-child {
+        text-transform: capitalize;
+        text-align: left;
+    }
+}
+
+table tr {
+    background-color: #fff;
+
+    &:nth-child(2n) {
+        background-color: #ecf1f4;
+    }
+}
